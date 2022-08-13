@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Events</title>
+</head>
+<body>
+  <button class="hello-world-btn">Hello World!</button>
+  <script>
+    document.addEventListener('DOMContentLoaded', log);
+    function log() {
+      console.log('content loaded!');
+    }
+
+    window.addEventListener('mousemove', move);
+    function move() {
+      console.log('mouse is moving!');
+    }
+
+    var $helloWorld = document.querySelector('.hello-world-button');
+    $helloWorld.addEventListener('click', world);
+    function world() {
+      console.log('hello world');
+    }
+  </script>
+</body>
+</html>
